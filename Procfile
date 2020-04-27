@@ -1,1 +1,1 @@
-web: main
+web: kaizen_api
