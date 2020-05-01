@@ -1,1 +1,2 @@
-web: kaizen_api
+web: go build *.go 
+web: ./main
