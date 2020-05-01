@@ -1,2 +1,1 @@
-web: go build *.go 
-web: ./main
+web: go build *.go
