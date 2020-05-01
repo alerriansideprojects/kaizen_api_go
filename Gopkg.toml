@@ -1,0 +1,4 @@
+[metadata.heroku]
+  root-package = "github.com/alerrian/kaizen_api"
+  go-version = "1.12"
+  install = ["./..."]
