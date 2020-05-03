@@ -10,15 +10,16 @@ import (
 )
 
 func main() {
+	port := GetPort()
 	fmt.Println("Starting Service...")
 
 	fmt.Println("Started...")
-	fmt.Println("Listening on Port: " + GetPort())
+	fmt.Println("Listening on Port: " + port)
 
 	router := mux.NewRouter().StrictSlash(true)
 
 	NewRouter(router)
-	err := http.ListenAndServe(GetPort(), router)
+	err := http.ListenAndServe(port, router)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
